@@ -4,7 +4,7 @@ import { IGenericResponse, IProduct } from "../../types/types";
 export const productApi = createApi({
     reducerPath: 'productApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:7000/api/product'
+        baseUrl: process.env.API_URL || 'http://localhost:7000/api/product'
     }),
     endpoints: (builder) => ({
         addProducct: builder.mutation<IGenericResponse, IProduct>({
