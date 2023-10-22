@@ -1,16 +1,18 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { IGenericResponse, IProduct } from "../../types/types";
 
+const url = process.env.REACT_API_URL || 'http://localhost:7000/api/product';
+
 export const productApi = createApi({
     reducerPath: 'productApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: process.env.API_URL || 'http://localhost:7000/api/product'
+        baseUrl: url
     }),
     endpoints: (builder) => ({
         addProducct: builder.mutation<IGenericResponse, IProduct>({
             query: (data) => {
                 return {
-                    url: '/product',
+                    url: '/',
                     method: 'POST',
                     body: data,
                 };
