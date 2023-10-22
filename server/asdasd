@@ -1,0 +1,27 @@
+// const { PrismaClient } = require('@prisma/client');
+
+// module.exports = new PrismaClient();
+
+// DATABASE_URL="postgresql://postgres:12345@localhost:5432/overall-store?schema=public"
+
+
+// product create logic:
+// async create(req, res){
+//     try{
+//     let { name, price, description, size, article, typeId, brandId, } = req.body;
+//     const {img} = req.files;
+//     let fileName = uuid.v4() + '.jpg';
+//     img.mv(path.resolve(__dirname, '..', 'static', fileName));
+
+//     const item = await prisma.item.create({
+//         data: {
+//             name,
+//             price: parseInt(price),
+//             typeId: parseInt(typeId),
+//             brandId: parseInt(brandId),
+//             description,
+//             size,
+//             article,
+//             img: fileName,
+//         }
+//     })

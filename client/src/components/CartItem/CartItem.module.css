@@ -1,0 +1,36 @@
+.removetimer_container{
+    @apply flex flex-row flex-nowrap gap-8 lg:gap-10 h-[136px] 
+    items-center  font-semibold text-[13px] text-gray-500 relative;
+}
+
+.cartitem_container{
+    @apply flex flex-row justify-between gap-0 flex-nowrap py-5;
+}
+
+.image_title_container{
+    @apply flex flex-row justify-between gap-0 flex-nowrap py-5;
+}
+
+.return_close_button{
+    @apply cursor-pointer ml-[150px] md:ml-[110px] hover:text-gray-400 transition-all font-bold;
+}
+
+.name{
+    @apply text-[16px] uppercase font-semibold tracking-tight;
+}
+
+.size{
+    @apply text-[12px] font-normal mb-4 tracking-tight;
+}
+
+.increment_deccrement{
+    @apply cursor-pointer text-[20px] text-slate-400 hover:text-slate-800 transition-all;
+}
+
+.price{
+    @apply flex items-center font-semibold whitespace-nowrap;
+}
+
+.close_button{
+    @apply text-slate-400 text-[25px] hover:text-slate-800 transition-all;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+.container{
+    @apply h-screen w-full lg:w-[485px] bg-white flex flex-col items-center fixed z-50 inset-y-0 left-0 pointer-events-auto justify-between;
+}
+
+.navContainer{
+    @apply mt-[60px] text-center;
+}
+
+.linkContainer{
+    @apply mt-[40px]
+}
+
+.linkItem{
+    @apply mt-[20px] leading-normal text-[30px] font-semibold hover:text-[31px] uppercase duration-300 transition-all;
+}
+
+.activelink{
+    @apply mt-[20px] underline-offset-1 text-[30px] font-semibold ;
+}
+
+.socContainer{
+    @apply mb-[40px] flex justify-between gap-4
+}
+
+.title{
+    @apply text-[55px] font-bold uppercase font-['Nosifer'];
+}

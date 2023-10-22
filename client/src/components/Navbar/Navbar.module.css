@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+.header{
+    @apply flex justify-between w-[100%] h-14 py-4 z-30 px-4 sm:px-10 md:px-32 fixed bg-white;
+}
+
+.links{
+    @apply text-red-800;
+}
+
+.logo{
+    font-family: 'Nosifer', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.logo_cartisopen{
+    @apply mr-[17px] uppercase text-[40px] font-['Nosifer']
+}

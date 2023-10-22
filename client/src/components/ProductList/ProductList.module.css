@@ -1,0 +1,20 @@
+/* section1 */
+.title_container{
+    @apply flex items-center justify-items-center z-20 text-left flex-col;
+}
+
+.title_container_name{
+    @apply font-bold uppercase text-[40px];
+}
+
+.title_container_description{
+    @apply w-[300px] text-[25px] font-light leading-7
+}
+
+.image_container{
+    @apply flex flex-row justify-between z-10 items-center;
+}
+
+.image_container_image{
+    @apply h-[570px];
+}
