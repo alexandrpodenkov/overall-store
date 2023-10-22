@@ -10,7 +10,7 @@ export const productApi = createApi({
         addProducct: builder.mutation<IGenericResponse, IProduct>({
             query: (data) => {
                 return {
-                    url: '/',
+                    url: '/product',
                     method: 'POST',
                     body: data,
                 };
